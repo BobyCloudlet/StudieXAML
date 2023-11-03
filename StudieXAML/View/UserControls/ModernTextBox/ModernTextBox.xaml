@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="StudieXAML.View.UserControls.ModernTextBox.ModernTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StudieXAML.View.UserControls.ModernTextBox"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="250">
+    <Grid Background="White">
+
+        <TextBox x:Name="input" VerticalContentAlignment="Center" Margin="10" Padding="15,0,15,0" BorderThickness="1" BorderBrush="Black"
+                 Background="Transparent" 
+                 FontSize="18" FontWeight="Bold"
+                 TextChanged="TextBox_TextChanged"/>
+        <TextBlock x:Name="tbPlaceholder" VerticalAlignment="Center" Margin="27,0,27,0" 
+           Text="{Binding Placeholder}"
+           FontSize="18" FontWeight="Light"
+           Foreground="DarkGray"
+           Panel.ZIndex="-1"/>
+    </Grid>
+</UserControl>
